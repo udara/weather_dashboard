@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css"> 
+  </head>
+  <body class="text-secondary">
+
+    <div class="container">
+
+      <!--Jumbotron-->
+      <div class="jumbotron mb-0 p-2">
+          <h1 class="display-3">Weather Dashboard</h1>
+      </div>
+      <!--/Jumbotron-->
+
+      <!--Dashboard-->
+      <div class="container">
+        <div class="row">
+              <!--Left Panel-->
+              <div class="col-md-3 p-2 bg-light">
+                
+                <div class="input-group mb-3 mt-3">
+                  <input type="text" name="city" id="city" class="form-control" placeholder="City name" aria-label="City name">
+                  <div class="input-group-append">
+                    <button class="btn btn-primary" id="search" type="button">Search</button>
+                  </div>
+                </div>
+                
+                <div class="search-history">
+
+                  <div class="col-12 p-2 border rounded primary">Colombo</div>
+
+                </div>
+
+              </div>
+              <!--/Left Panel-->
+              <!--Right Panel-->
+              <div class="col-md-9 mt-3 p-2">
+
+                  <div class="col-12 mb-2 p-3 border rounded">
+                    <p id="main-city" class="xlg-txt">City With Date</p>
+                    <p>Temperature <span id="main-temperature"></span></p>
+                    <p>Humidity <span id="main-humidity"></span></p>
+                    <p>Wind Speed <span id="main-windspeed"></span></p>
+                    <p>UV index <span id="main-uvindex"></span></p>
+                  </div>
+
+                  <div class="col-12 mb-2 p-3 border rounded">
+                    <div class="row">
+
+                      <div class="card">
+                        <div class="card-body">
+                          <p id="d-1-date">08/16/2020</p>
+                        </div>
+                      </div>
+
+                      <div class="card">
+                        <div class="card-body">
+                          This is some text within a card body.
+                        </div>
+                      </div>
+
+                      <div class="card">
+                        <div class="card-body">
+                          This is some text within a card body.
+                        </div>
+                      </div>
+
+                      <div class="card">
+                        <div class="card-body">
+                          This is some text within a card body.
+                        </div>
+                      </div>
+
+                      <div class="card">
+                        <div class="card-body">
+                          This is some text within a card body.
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+              </div>
+              <!--/Right Panel-->
+        </div>
+      </div>
+      <!--Dashboard-->
+    </div><!--/Site Container-->
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
