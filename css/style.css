@@ -3,14 +3,52 @@
     font-size: 2em;
 }
 
+.lg-txt
+{
+    font-size: 1.6em;
+    display: block;
+    clear: both;
+}
 
 .card
 {
     width: 19%;
-    margin: 0 auto;    
+    margin: 0 auto;
+    color: #fff;
+    background-color: #007bff;
+    margin-bottom: 10px;
+    min-width:140px;   
 }
 
 .card-body
 {
     padding: 10px;
 }
+
+.weather-icon 
+{
+    padding:0;
+    margin:0;
+    height: 60px;
+    display: inline;
+}
+
+.search-history
+{
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+#main-uvindex
+{
+    padding: 3px;
+    color:#fff;
+}
+
+@media (max-width: 768px) {
+    .right-panel{
+        padding-left: 0 !important;
+        
+      }
+}
+ 

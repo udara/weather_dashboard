@@ -12,11 +12,11 @@
   </head>
   <body class="text-secondary">
 
-    <div class="container">
+    <div class="container border rounded p-2 mt-3 mb-3">
 
       <!--Jumbotron-->
-      <div class="jumbotron mb-0 p-2">
-          <h1 class="display-3">Weather Dashboard</h1>
+      <div class="jumbotron mb-0 p-2 border">
+          <h1 class="display-4">Weather Dashboard</h1>
       </div>
       <!--/Jumbotron-->
 
@@ -24,66 +24,35 @@
       <div class="container">
         <div class="row">
               <!--Left Panel-->
-              <div class="col-md-3 p-2 bg-light">
+              <div class="col-md-3 p-2 bg-light mt-2 rounded border">
                 
                 <div class="input-group mb-3 mt-3">
-                  <input type="text" name="city" id="city" class="form-control" placeholder="City name" aria-label="City name">
+                  <input type="text" name="city"  value="Colombo" id="city" required class="form-control" placeholder="City name" aria-label="City name">
                   <div class="input-group-append">
                     <button class="btn btn-primary" id="search" type="button">Search</button>
                   </div>
                 </div>
                 
-                <div class="search-history">
-
-                  <div class="col-12 p-2 border rounded primary">Colombo</div>
+                <div id="search-history">
 
                 </div>
 
               </div>
               <!--/Left Panel-->
               <!--Right Panel-->
-              <div class="col-md-9 mt-3 p-2">
+              <div class="col-md-9 mt-2 p-0 pl-2 right-panel">
 
                   <div class="col-12 mb-2 p-3 border rounded">
-                    <p id="main-city" class="xlg-txt">City With Date</p>
+                    <p id="main-city" class="xlg-txt"></p>
                     <p>Temperature <span id="main-temperature"></span></p>
                     <p>Humidity <span id="main-humidity"></span></p>
                     <p>Wind Speed <span id="main-windspeed"></span></p>
                     <p>UV index <span id="main-uvindex"></span></p>
                   </div>
 
-                  <div class="col-12 mb-2 p-3 border rounded">
-                    <div class="row">
-
-                      <div class="card">
-                        <div class="card-body">
-                          <p id="d-1-date">08/16/2020</p>
-                        </div>
-                      </div>
-
-                      <div class="card">
-                        <div class="card-body">
-                          This is some text within a card body.
-                        </div>
-                      </div>
-
-                      <div class="card">
-                        <div class="card-body">
-                          This is some text within a card body.
-                        </div>
-                      </div>
-
-                      <div class="card">
-                        <div class="card-body">
-                          This is some text within a card body.
-                        </div>
-                      </div>
-
-                      <div class="card">
-                        <div class="card-body">
-                          This is some text within a card body.
-                        </div>
-                      </div>
+                  <div class="col-12 mb-2">
+                    <p class="lg-txt">5 Day Forecast</p>
+                    <div class="row" id="five-day-forecast">
 
                     </div>
                   </div>
@@ -93,6 +62,24 @@
         </div>
       </div>
       <!--Dashboard-->
+
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header bg-danger rounded p-2">
+              <h4 class="modal-title text-light" id="exampleModalLabel">Error</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body error-body">
+              
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default close" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div><!--/Site Container-->
       
     <!-- Optional JavaScript -->
@@ -100,6 +87,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
