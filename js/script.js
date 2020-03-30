@@ -154,7 +154,7 @@ $( document ).ready(function() {
       triggerAPICalls($('#city').val());
     }
     else {
-      Weather.handleError('City must be more than 2 characters long');
+      Weather.handleError('City must be more than 4 characters long');
     }
   });
 
